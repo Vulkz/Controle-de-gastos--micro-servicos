@@ -1,0 +1,55 @@
+:root {
+    --cor-primaria: rgb(56, 188, 67);
+    --cor-secundaria: white;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 300px;
+}
+
+form label {
+    display: block;
+}
+
+form input, form button {
+    padding: 10px;
+    display: block;
+    margin-bottom: 1em;
+    width: -webkit-fill-available;
+    border-radius: 0.3rem;
+}
+
+input {
+    border: none;
+    border-radius: 0.3rem;
+}
+
+button {
+    cursor: pointer
+}
+
+.clear {
+    background: transparent;
+    border: none;
+    color: var(--cor-secundaria);
+}
+
+.solid {
+    background: var(--cor-secundaria);
+    border: none;
+    color: var(--cor-primaria);
+}
+
+.outline {
+    background: transparent;
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+}
