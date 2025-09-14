@@ -12,33 +12,13 @@
         <input type="email" id="email" onchange="validarCampos()" placeholder="seu@email.com" />
 
         <label>Senha</label>
-        <input type="password" placeholder="senha"/>
+        <input type="password" id="senha" onchange="validarCampos()" placeholder="senha"/>
 
         <button type="button" class="clear" id="botao-recuperar-senha" disabled="true">Recuperar senha</button>
-        <button type="button" class="solid" disabled="true">Entrar</button>
+        <button type="button" class="solid" id="botao-de-login" disabled="true">Entrar</button>
         <button type="button" class="outline">Registrar</button>
     </form>
 
-    <script>
-        function validarCampos() {
-            const emailValido = eUmEmailValido();
-
-            document.getElementById('botao-recuperar-senha').disabled = !emailValido;
-        }
-
-        function eUmEmailValido() {
-            const email = document.getElementById("email").value;
-
-            if (!email) {
-                return false;
-            }
-            return validarEmail(email);
-        }
-
-        function validarEmail(email){
-            return /\S+@\S+\.\S+/.test(email);
-        }
-
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
