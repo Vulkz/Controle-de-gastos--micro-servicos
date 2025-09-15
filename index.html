@@ -9,10 +9,13 @@
 <body>
     <form action="">
         <label>E-mail</label>
-        <input type="email" id="email" onchange="validarCampos()" placeholder="seu@email.com" />
+        <input type="email" id="email" onchange="mudarEmail()" placeholder="seu@email.com" />
+        <p class="erro" id="erro-email-obrigatorio">Email é obrigatório</p>
+        <p class="erro" id="erro-email-invalido">Email é invalido</p>
 
         <label>Senha</label>
-        <input type="password" id="senha" onchange="validarCampos()" placeholder="senha"/>
+        <input type="password" id="senha" onchange="mudarSenha()" placeholder="senha"/>
+        <p class="erro" id="erro-senha-obrigatoria">Senha é obrigatória</p>
 
         <button type="button" class="clear" id="botao-recuperar-senha" disabled="true">Recuperar senha</button>
         <button type="button" class="solid" id="botao-de-login" disabled="true">Entrar</button>

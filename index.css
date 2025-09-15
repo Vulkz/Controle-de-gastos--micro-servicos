@@ -58,3 +58,10 @@ button[disabled] {
     color: var(--cor-secundaria);
     border: 1px solid var(--cor-secundaria);
 }
+
+.erro {
+    color: var(--cor-secundaria);
+    background-color: red;
+    margin: 0px;
+    display: none;
+}
